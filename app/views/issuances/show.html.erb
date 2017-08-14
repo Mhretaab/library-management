@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uuid:</strong>
+  <%= @issuance.uuid %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @issuance.book_id %>
+</p>
+
+<p>
+  <strong>Issuer:</strong>
+  <%= @issuance.issuer_id %>
+</p>
+
+<p>
+  <strong>Issued to:</strong>
+  <%= @issuance.issued_to_id %>
+</p>
+
+<p>
+  <strong>Issuance date:</strong>
+  <%= @issuance.issuance_date %>
+</p>
+
+<p>
+  <strong>Return date:</strong>
+  <%= @issuance.return_date %>
+</p>
+
+<p>
+  <strong>Remark:</strong>
+  <%= @issuance.remark %>
+</p>
+
+<%= link_to 'Edit', edit_issuance_path(@issuance) %> |
+<%= link_to 'Back', issuances_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uuid: MyString
+  book_id: 1
+  issuer_id: 1
+  issued_to_id: 1
+  issuance_date: 2017-07-21 01:53:15
+  return_date: 2017-07-21 01:53:15
+  remark: MyText
+
+two:
+  uuid: MyString
+  book_id: 1
+  issuer_id: 1
+  issued_to_id: 1
+  issuance_date: 2017-07-21 01:53:15
+  return_date: 2017-07-21 01:53:15
+  remark: MyText

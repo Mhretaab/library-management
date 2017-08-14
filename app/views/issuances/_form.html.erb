@@ -1,0 +1,52 @@
+<%= form_for(issuance) do |f| %>
+  <% if issuance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(issuance.errors.count, "error") %> prohibited this issuance from being saved:</h2>
+
+      <ul>
+      <% issuance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :uuid %>
+    <%= f.text_field :uuid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :book_id %>
+    <%= f.number_field :book_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :issuer_id %>
+    <%= f.number_field :issuer_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :issued_to_id %>
+    <%= f.number_field :issued_to_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :issuance_date %>
+    <%= f.datetime_select :issuance_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :return_date %>
+    <%= f.datetime_select :return_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :remark %>
+    <%= f.text_area :remark %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
